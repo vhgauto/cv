@@ -9,14 +9,18 @@ $body-color: black;
 
 /*-- scss:rules --*/
 
+gris {
+  color: darken($gris, 2);
+}
+
 .img-fluid {
   border: 3px solid $body-color;
 }
 
 .fecha-act {
-  text-align: right;
+  text-align: center;
   color: darken($color: $gris, $amount: 7);
-  padding-right: 4rem;
+  // padding-right: 4rem;
 }
 
 .borde-abajo {
