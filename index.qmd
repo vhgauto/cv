@@ -20,8 +20,6 @@ execute:
   eval: true
   warning: false
   echo: false
-nocite: |
-  @*
 editor_options: 
   chunk_output_type: console
 extensions:
