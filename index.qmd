@@ -1,0 +1,343 @@
+---
+title: Mgtr. Víctor Gauto
+format: 
+  html:
+    page-layout: custom
+    embed-resources: true
+    theme: 
+      light: 
+        - extras/estilos.scss
+        - extras/estilos_light.scss
+      dark: 
+        - extras/estilos.scss
+        - extras/estilos_dark.scss
+    include-in-header: 
+      - extras/favicon.html
+    link-external-newwindow: true
+    respect-user-color-scheme: true
+execute: 
+  output: asis
+  eval: true
+  warning: false
+  echo: false
+nocite: |
+  @*
+editor_options: 
+  chunk_output_type: console
+extensions:
+  iconify:
+    set: "octicon"
+    size: "lg"
+    inline: true
+    mode: "svg"
+    style: "color: #00AF50;"
+---
+
+```{r}
+source("scripts/soporte.R")
+```
+
+<br>
+
+::: {.column-screen .portada}
+<peq>Mgtr.</peq> <tit>Víctor Gauto</tit> &nbsp; &nbsp; <peq>Ingeniero Químico</peq>
+:::
+
+:::::: {.grid}
+
+::::: {.g-col-2}
+:::::
+
+::::: {.g-col-8}
+
+<br>
+
+::: {.grid style="line-height: 1.8rem; padding-bottom: 0rem"}
+
+::: {.g-col-3 style="text-align: right;"}
+Fecha de nacimiento<br>
+Edad<br>
+Correo electrónico<br>
+Redes sociales<br>
+Investigación<br>
+Sitio web
+:::
+
+::: {.g-col-6 style="text-align: left;"}
+`{r} format(nacimiento, "%d/%b/%Y")`<br>
+`{r} floor(as.numeric(Sys.Date() - nacimiento)/365)` años<br>
+[victor.gauto@ca.frre.utn.edu.ar](mailto:victor.gauto@ca.frre.utn.edu.ar)<br>
+[{{< iconify ri:twitter-fill >}}](https://x.com/vhgauto)
+[{{< iconify ri:github-fill >}}](https://github.com/vhgauto)
+[{{< iconify ri:instagram-fill >}}](https://www.instagram.com/vhgauto/)
+[{{< iconify ri:bluesky-fill >}}](https://bsky.app/profile/vhgauto.bsky.social)
+[{{< iconify ri:mastodon-fill >}}](https://fosstodon.org/@vhgauto) / vhgauto<br>
+[{{< iconify simple-icons:orcid >}} 0000-0001-9960-8558](https://orcid.org/0000-0001-9960-8558) &nbsp; &nbsp; [{{< iconify fa7-brands:google-scholar >}} Google Scholar](https://scholar.google.es/citations?user=nxCfD0AAAAAJ) &nbsp; &nbsp; [{{< iconify simple-icons:researchgate >}} Research Gate ](https://www.researchgate.net/profile/Victor_Gauto)<br>
+[https://vhgauto.github.io/](https://vhgauto.github.io/)
+:::
+
+::: {.g-col-3}
+![](img/foto.jpg){fig-align="right" width="85%"}
+:::
+
+:::
+
+```{r}
+keywords()
+```
+
+```{r}
+separador("posición actual")
+```
+
+Estudiante del **Doctorado en Geomática y Sistemas Espaciales** del [Instituto Gulich](https://ig.conae.unc.edu.ar/). Tema de tesis "Desarrollo de un modelo predictivo de indicadores de calidad de agua en la cuenca media del río Paraná mediante técnicas de teledetección satelital y aprendizaje automático".
+<br>
+<br>
+Becario doctoral **CONICET**, en el [Instituto de Investigación para el Desarrollo Territorial y del Hábitat Humano](https://iidthh.conicet.gov.ar/).
+<br>
+<br>
+Integrante del [Grupo de Investigación Sobre Temas Ambientales y Químicos](https://www.instagram.com/gistaq.utn/), en la Universidad Tecnológica Nacional, Facultad Regional Resistencia. Proyecto ["Estimar indicadores de calidad de agua en la cuenca media del río Paraná para el desarrollo de un algoritmo mediante técnicas de teledetección satelital"](https://vhgauto.quarto.pub/gistaq-parana/).
+
+```{r}
+separador("educación")
+```
+
+```{r}
+item(
+  tipo = "doctorado",
+  inicio = "Abr/2022",
+  fin = "En proceso",
+  titulo = "Doctorado en Geomática y Sistemas Espaciales",
+  ubicacion = "Instituto Gulich",
+  detalle = "<u>Tesis</u>:  Desarrollo de un modelo predictivo de indicadores de calidad de agua en la cuenca media del río Paraná mediante técnicas de teledetección satelital y aprendizaje automático.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "maestría",
+  inicio = "Feb/2020",
+  fin = "Sep/2023",
+  titulo = "Maestría en Aplicaciones de Información Espacial",
+  ubicacion = "Instituto Gulich",
+  detalle = "<u>Tesis</u>:  Caracterización óptica de aguas superficiales a partir de imágenes satelitales multi e hiperespectrales en la región de Gran Resistencia, Chaco.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "maestría",
+  inicio = "Mar/2017",
+  fin = "Feb/2019",
+  titulo = "Maestría en Ingeniería Química y Biomolecular",
+  ubicacion = "<fondo-verde>Sogang University, Seúl, Corea del Sur</fondo-verde>",
+  detalle = "<u>Tesis</u>: Catalizadores de cobalto con soporte de alúmina mesoporosa ordenada para síntesis de Fischer-Tropsch. Promedio: 9,8/10.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "universidad",
+  inicio = "Mar/2007",
+  fin = "Dic/2014",
+  titulo = "Ingeniería Química",
+  ubicacion = "Universidad Tecnológica Nacional (UTN), Facultad Regional Resistencia (FRRe)",
+  detalle = "Promedio: 7,2/10. Título intermedio:  Técnico Universitario Químico (2012)."
+)
+```
+
+```{r}
+separador("experiencia")
+```
+
+```{r}
+item(
+  tipo = "Investigación",
+  inicio = "Feb/2023",
+  fin = "En proceso",
+  titulo = "Grupo de Investigación Sobre Temas Ambientales y Químicos",
+  ubicacion = "UTN FRRe",
+  detalle = "<u>Proyecto</u>: Estimar indicadores de calidad de agua en la cuenca media del Río Paraná para el desarrollo de un algoritmo mediante técnicas de teledetección satelital.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "Investigación",
+  inicio = "Feb/2021",
+  fin = "Feb/2023",
+  titulo = "Grupo de Investigación Sobre Temas Ambientales y Químicos",
+  ubicacion = "UTN FRRe",
+  detalle = "<u>Proyecto</u>: Caracterización fisicoquímica de cuerpos de aguas continentales para la evaluación de la utilización de algoritmos en el monitoreo satelital de la calidad del agua.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "pasantía",
+  inicio = "Mar/2022",
+  fin = "Sep/2022",
+  titulo = "Instituto de Detección Electromagnética del Ambiente",
+  ubicacion = "<fondo-verde>Consejo Nacional de Investigación, Milán, Italia</fondo-verde>",
+  detalle = "Uso de producto hiperespectral para estudio de lagunas y ríos.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "servicios",
+  inicio = "May/2019",
+  fin = "Feb/2020",
+  titulo = "Grupo de Investigación Sobre Temas Ambientales y Químicos",
+  ubicacion = "UTN FRRe",
+  detalle = "Análisis de calidad de agua y autocalentamiento de carbón. Análisis fisicoquímicos de laboratorio. Gestión de personal, contabilidad y clientes.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "investigación",
+  inicio = "May/2019",
+  fin = "Feb/2020",
+  titulo = "Grupo de Investigación Sobre Temas Ambientales y Químicos",
+  ubicacion = "UTN FRRe",
+  detalle = "<u>Proyecto</u>: Determinación del fenómeno de sorción-desorción de colorantes en materiales de bajo costo estudiados en un reactor tubular de lecho fijo.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "investigación",
+  inicio = "May/2017",
+  fin = "Feb/2019",
+  titulo = "Laboratorio de Ingeniería de las Reacciones y Catálisis a Nanoescala",
+  ubicacion = "<fondo-verde>Sogang University, Seúl, Corea del Sur</fondo-verde>",
+  detalle = "<u>Área</u>: Tecnología gas-líquido, síntesis de Fischer-Tropsch. Síntesis de catalizadores. Puesta en marcha y manipulación de reactor heterogéneo.",
+  borde = TRUE
+)
+```
+
+```{r}
+item(
+  tipo = "auxiliar docente",
+  inicio = "Sep/2015",
+  fin = "Feb/2017",
+  titulo = "Actividad en docencia",
+  ubicacion = "Universidad Tecnológica Nacional, Facultad Regional Resistencia",
+  detalle = "Auxiliar docente con dedicación simple en dos cátedras: Fisicoquímica (Ingeniería Química) y Química (Ingeniería en Sistemas de Información)."
+)
+```
+
+```{r}
+separador("publicaciones")
+# Google Scholar, estilo Columbia
+```
+
+```{r}
+purrr::walk(años_pub, publicaciones)
+```
+
+```{r}
+separador("habilidades")
+```
+
+```{r}
+habilidades(
+  tipo = "Datos",
+  descrip = "- <u>Procesamiento</u>: lectura, manipulación y almacenamiento. Creación y análisis de figuras.\n
+  - <u>Modelado</u>: regresión y clasificación. Tradicionales y de aprendizaje automático. Redes neuronales. Métricas de desempeño.\n
+  - <u>Figuras</u>: creación, interpretación y estilos personalizados.",
+  borde = TRUE
+)
+```
+
+```{r}
+habilidades(
+  tipo = "Geografía",
+  descrip = "- <u>Análisis de datos</u>: lectura, procesamiento y modelado de datos geográficos.\n
+  - <u>Visualización</u>: ráster y vectores, creación de mapas, estilos personalizados.\n
+  - <u>Datos satelitales</u>: búsqueda, obtención y lectura de datos provenientes de plataformas satelitales.",
+  borde = TRUE
+)
+```
+
+::: {.light-content}
+
+```{r}
+habilidades(
+  tipo = "Programación",
+  descrip = programación(),
+  borde = TRUE
+)
+```
+
+:::
+
+::: {.dark-content}
+
+```{r}
+habilidades(
+  tipo = "Programación",
+  descrip = programación("white"),
+  borde = TRUE
+)
+```
+
+:::
+
+```{r}
+habilidades(
+  tipo = "Software",
+  descrip = "{{< iconify devicon:rstudio >}} RStudio &nbsp; &nbsp; {{< iconify simple-icons:qgis style='color: #93B023;' >}} QGIS &nbsp; &nbsp; {{< iconify devicon:vscode >}} Visual Studio Code &nbsp; &nbsp; {{< iconify simple-icons:googleearthengine style='color: #2D65DC;' >}} Google Earth Engine &nbsp; &nbsp; {{< iconify vscode-icons:file-type-word >}} Word &nbsp; &nbsp; {{< iconify vscode-icons:file-type-excel >}} Excel &nbsp; &nbsp; {{< iconify vscode-icons:file-type-powerpoint >}} PowerPoint"
+)
+```
+
+```{r}
+separador("idiomas")
+```
+
+```{r}
+habilidades(
+  tipo = "Inglés",
+  descrip = "<b>Nivel avanzado</b>. Examen TOEIC: 865/990 (87%). {{< iconify subway calendar >}} &nbsp; Nov/2014.",
+  borde = TRUE
+)
+```
+
+```{r}
+habilidades(
+  tipo = "Coreano",
+  descrip = "<b>Nivel básico</b>. Yonsei University, curso online. {{< iconify subway calendar >}} &nbsp; Oct/2020."
+)
+```
+
+:::::
+
+::::: {.g-col-2}
+:::::
+
+::::::
+
+::: {.column-screen .fecha-act}
+
+<br>
+<br>
+<br>
+<br>
+
+Creado con {{< quarto >}} [Quarto](https://quarto.org/) y {{< iconify fa-brands:r-project style="color:#1E69BF;" >}} [R](https://www.r-project.org/)
+<br>
+[`{r} format(Sys.time(), "%Y-%m-%d")`]{style='font-family: Fira Code;'}
+
+:::
+
+<br>
+<br>
