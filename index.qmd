@@ -326,14 +326,22 @@ habilidades(
 
 ::::::
 
-::: {.column-screen .fecha-act}
+<br>
+<br>
+<br>
+<br>
 
-<br>
-<br>
+::: {.fecha-act}
+
+```{r}
+github()
+```
 <br>
 <br>
 
 Creado con {{< quarto >}} [Quarto](https://quarto.org/) y {{< iconify fa-brands:r-project style="color:#1E69BF;" >}} [R](https://www.r-project.org/)
+
+<br>
 <br>
 [`{r} format(Sys.time(), "%Y-%m-%d")`]{style='font-family: Fira Code;'}
 
