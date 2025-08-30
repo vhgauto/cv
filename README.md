@@ -1,2 +1,2 @@
 # cv
-Currículum viate
+Currículum vitae
