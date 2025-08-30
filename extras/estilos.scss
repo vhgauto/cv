@@ -1,0 +1,155 @@
+/*-- scss:defaults --*/
+
+@font-face {
+  font-family: "Lato";
+  src: url("fuentes/Lato-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("fuentes/FiraCode-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Rufina Bold";
+  src: url("fuentes/Rufina-Bold.ttf") format('truetype');
+}
+
+$font-family-sans-serif: Lato;
+$serif: Rufina Bold;
+$font-family-monospace: Fira Code;
+
+/*-- scss:rules --*/
+
+p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
+  background-color: transparent;
+  color: $body-color;
+  border-radius: 0px;
+  border: solid 1px $verde;
+}
+
+u {
+  text-decoration-color: $verde;
+  text-decoration-thickness: 2px;
+}
+
+code {
+  background-color: transparent;
+  color: $body-color;
+  border-radius: 0px;
+  border: solid 2px $verde;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: $serif;
+  color: $verde;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.author, .title {
+  display: none;
+}
+
+tit {
+  text-shadow: 2px 2px 2px black;
+  font-size: 4rem;
+  text-align: left;
+  font-variant-caps: small-caps;
+  color: white;
+  font-family: $serif;
+  font-weight: bold;
+}
+
+peq {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-family: $serif;
+}
+
+tipo {
+  font-size: 1.5rem;
+  font-family: $serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+rango {
+  font-size: .9rem;
+}
+
+fondo-verde {
+  background-color: $verde;
+  color: white;
+}
+
+a {
+  color: $verde;
+  &:hover {
+    color: darken($verde, 10);
+  }
+}
+
+.dotted-word-flex {
+  margin-left: 0rem;
+  margin-top: 1.1rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  &::before {
+    content: '■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■';
+    width: 6rem; // Fixed distance from left margin - adjust this value
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: $altura;
+    color: $gris;
+    font-size: 1rem;
+  }
+
+  &::after {
+    content: '■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■';
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: $altura;
+    color: $gris;
+    font-size: 1rem;
+  }
+
+  .seccion {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: transparent;
+    text-transform: uppercase;
+  }
+}
+
+
+hr {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding: 0rem;
+  border: 0;
+  border-top: 2px solid $gris;
+  opacity: 1;
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+::marker {
+  color: $verde;
+  content: "► ";
+}
+
+ol, ul {
+  padding-left: 0rem;
+}

@@ -1,0 +1,58 @@
+/*-- scss:defaults --*/
+
+$verde: #00AF50;
+$gris: rgb(80,80,80);
+
+$altura: .6rem;
+$body-bg: rgb(50, 50, 50);
+$body-color: white;
+
+/*-- scss:rules --*/
+
+.img-fluid {
+  border: 3px solid $body-color;
+}
+
+.fecha-act {
+  text-align: right;
+  color: lighten($color: $gris, $amount: 7);
+  padding-right: 4rem;
+}
+
+.borde-abajo {
+  border-bottom: solid 2px darken($color: $gris, $amount: 3);
+  padding-top: .4rem;
+}
+
+a {
+  color: $verde;
+  &:hover {
+    color: lighten($verde, 10);
+  }
+}
+
+.portada {
+  background-color: $verde;
+  border-top: solid 2px $body-color;
+  border-bottom: solid 2px $body-color;
+  padding-left: 15rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+// Track
+::-webkit-scrollbar-track {
+  background: darken($gris, 10);
+}
+
+// Handle
+::-webkit-scrollbar-thumb {
+  background: lighten($gris, 10);
+}
+
+// Handle on hover
+::-webkit-scrollbar-thumb:hover {
+  background: lighten($gris, 20);
+}
