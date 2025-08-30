@@ -3,6 +3,8 @@ fuentes/
 Resu*
 test*
 .*
+_*
+
 # History files
 .Rhistory
 .Rapp.history
