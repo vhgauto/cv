@@ -116,10 +116,5 @@ programación <- function(color = "black") {
 }
 
 github <- function() {
-  cat(
-    "<center>\n",
-    "[Ver en {{< iconify ri:github-fill >}}](https://github.com/vhgauto/cv)\n",
-    "</center>",
-    sep = ""
-  )
+  cat("[Ver en {{< iconify ri:github-fill >}}](https://github.com/vhgauto/cv)")
 }
