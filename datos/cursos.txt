@@ -1,0 +1,21 @@
+año	curso
+2019	Escuela de monitoreo ambiental: de la nanociencia a la teledetección. Nuevos paradigmas de participación ciudadana
+2015	Curso-taller teórico práctico "Generación de Biogás y Abono a partir de Residuos Orgánicos"
+2016	Desarrollando proyectos de I+D+i
+2019	Gestión de la ciencia, la tecnología y la innovación
+2015	Introducción a la investigación, el desarrollo y la innovación
+2021	Introducción a Sistemas de Información Geográfica y Teledetección con Orientación a la Gestión Territorial
+2021	Beyond the Visible Introduction to Hyperspectral Remote Sensing
+2021	Mapping soil moisture and inundation at high resolution
+2021	Air quality and climate processes using satellites and atmospheric models
+2021	Wildfire prevention, monitoring and damage assessment
+2021	Retrieval of biophysical parameters from optical and radar data
+2021	Hyperspectral data processing
+2021	Processing of SAR images: integration of multi-frequency polarimetric SAR and optical data for land cover classification and creation of thematic maps
+2021	SAR differential interferometry and tomography
+2021	Machine learning in remote sensing
+2021	Earth Engine laboratory
+2023	Teleobservación de aguas marinas, costeras e interiores
+2024	Redes neuronales
+
+
