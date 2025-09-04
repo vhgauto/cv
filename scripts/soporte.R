@@ -118,3 +118,29 @@ programación <- function(color = "black") {
 github <- function() {
   cat("[Ver en {{< iconify ri:github-fill >}}](https://github.com/vhgauto/cv)")
 }
+
+cur <- readr::read_tsv("datos/cursos.txt", show_col_types = FALSE)
+años_cur <- unique(cur$año) |>
+  sort() |>
+  rev()
+
+cursos <- function(X, borde = FALSE) {
+  p <- dplyr::filter(cur, año == X)$curso
+  p <- paste0("- ", p, ".")
+  p <- stringr::str_flatten(p, collapse = "\n ")
+
+  if (X != min(años_cur)) {
+    grid_borde <- "\n::: {.grid .borde-abajo}"
+  } else {
+    grid_borde <- "\n::: {.grid}"
+  }
+
+  cat(
+    grid_borde,
+    "\n::: {.g-col-3}\n<tipo>",
+    X,
+    "</tipo>\n:::\n::: {.g-col-9}\n",
+    p,
+    "\n:::\n:::"
+  )
+}
