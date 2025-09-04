@@ -21,6 +21,11 @@ $font-family-monospace: Fira Code;
 
 /*-- scss:rules --*/
 
+dest {
+  font-variant-caps: small-caps;
+  font-weight: bold;
+}
+
 p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
   background-color: transparent;
   color: $body-color;
