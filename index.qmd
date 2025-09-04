@@ -54,7 +54,6 @@ source("scripts/soporte.R")
 
 ::: {.g-col-3 style="text-align: right;"}
 Fecha de nacimiento<br>
-Edad<br>
 Correo electrónico<br>
 Redes sociales<br>
 Investigación<br>
@@ -62,8 +61,7 @@ Sitio web
 :::
 
 ::: {.g-col-6 style="text-align: left;"}
-`{r} format(nacimiento, "%d/%b/%Y")`<br>
-`{r} floor(as.numeric(Sys.Date() - nacimiento)/365)` años<br>
+`{r} format(nacimiento, "%d/%b/%Y")` (`{r} floor(as.numeric(Sys.Date() - nacimiento)/365)` años)<br>
 [victor.gauto@ca.frre.utn.edu.ar](mailto:victor.gauto@ca.frre.utn.edu.ar)<br>
 [{{< iconify ri:twitter-fill >}}](https://x.com/vhgauto)
 [{{< iconify ri:github-fill >}}](https://github.com/vhgauto)
@@ -88,13 +86,13 @@ keywords()
 separador("posición actual")
 ```
 
-Estudiante del <dest>Doctorado en Geomática y Sistemas Espaciales</dest> del [Instituto Gulich](https://ig.conae.unc.edu.ar/). Tema de tesis "Desarrollo de un modelo predictivo de indicadores de calidad de agua en la cuenca media del río Paraná mediante técnicas de teledetección satelital y aprendizaje automático".
+Estudiante del <dest>Doctorado en Geomática y Sistemas Espaciales</dest> del [Instituto de Altos Estudios Espaciales Mario Gulich](https://ig.conae.unc.edu.ar/), dependiente de la [Comisión Nacional de Actividades Espaciales](https://www.argentina.gob.ar/ciencia/conae) y la [Universidad Nacional de Córdoba](https://www.unc.edu.ar/). Tema de tesis "Desarrollo de un modelo predictivo de indicadores de calidad de agua en la cuenca media del río Paraná mediante técnicas de teledetección satelital y aprendizaje automático".
 <br>
 <br>
 Becario doctoral **CONICET**, en el [Instituto de Investigación para el Desarrollo Territorial y del Hábitat Humano](https://iidthh.conicet.gov.ar/).
 <br>
 <br>
-Integrante del [Grupo de Investigación Sobre Temas Ambientales y Químicos](https://www.instagram.com/gistaq.utn/), en la Universidad Tecnológica Nacional, Facultad Regional Resistencia.
+Integrante del [Grupo de Investigación Sobre Temas Ambientales y Químicos](https://www.instagram.com/gistaq.utn/) en la [Universidad Tecnológica Nacional, Facultad Regional Resistencia](https://www.frre.utn.edu.ar/).
 
 ```{r}
 separador("educación")
@@ -241,6 +239,14 @@ separador("publicaciones")
 
 ```{r}
 purrr::walk(años_pub, publicaciones)
+```
+
+```{r}
+separador("cursos")
+```
+
+```{r}
+purrr::walk(años_cur, cursos)
 ```
 
 ```{r}
