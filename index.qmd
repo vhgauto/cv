@@ -69,7 +69,8 @@ Sitio web
 [{{< iconify ri:bluesky-fill >}}](https://bsky.app/profile/vhgauto.bsky.social)
 [{{< iconify ri:mastodon-fill >}}](https://fosstodon.org/@vhgauto) / vhgauto<br>
 [{{< iconify simple-icons:orcid >}} 0000-0001-9960-8558](https://orcid.org/0000-0001-9960-8558) &nbsp; &nbsp; [{{< iconify fa7-brands:google-scholar >}} Google Scholar](https://scholar.google.es/citations?user=nxCfD0AAAAAJ) &nbsp; &nbsp; [{{< iconify simple-icons:researchgate >}} Research Gate ](https://www.researchgate.net/profile/Victor_Gauto)<br>
-[https://vhgauto.github.io/](https://vhgauto.github.io/)
+[https://vhgauto.github.io/](https://vhgauto.github.io/)<br>
+[{{< iconify flowbite:download-outline >}}Versión .PDF {{< iconify qlementine-icons:pdf-16 >}}](index_typst.pdf){target="_blank"}
 :::
 
 ::: {.g-col-3}
@@ -300,7 +301,7 @@ habilidades(
 ```{r}
 habilidades(
   tipo = "Software",
-  descrip = "{{< iconify devicon:rstudio >}} RStudio &nbsp; &nbsp; {{< iconify simple-icons:qgis style='color: #93B023;' >}} QGIS &nbsp; &nbsp; {{< iconify devicon:vscode >}} Visual Studio Code &nbsp; &nbsp; {{< iconify simple-icons:googleearthengine style='color: #2D65DC;' >}} Google Earth Engine &nbsp; &nbsp; {{< iconify vscode-icons:file-type-word >}} Word &nbsp; &nbsp; {{< iconify vscode-icons:file-type-excel >}} Excel &nbsp; &nbsp; {{< iconify vscode-icons:file-type-powerpoint >}} PowerPoint"
+  descrip = "{{< iconify devicon:rstudio >}} RStudio &nbsp; &nbsp; {{< iconify simple-icons:qgis style='color: #93B023;' >}} QGIS &nbsp; &nbsp; {{< iconify devicon:vscode >}} Visual Studio Code &nbsp; &nbsp; {{< iconify simple-icons:googleearthengine style='color: #2D65DC;' >}} Google Earth Engine <br> {{< iconify vscode-icons:file-type-word >}} Word &nbsp; &nbsp; {{< iconify vscode-icons:file-type-excel >}} Excel &nbsp; &nbsp; {{< iconify vscode-icons:file-type-powerpoint >}} PowerPoint"
 )
 ```
 
