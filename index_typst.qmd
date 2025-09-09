@@ -107,7 +107,11 @@ source("scripts/soporte.R")
     colspan: 1,
     rowspan: 5,
     align: left,
-    rect(image("img/foto.jpg", width: 70%), stroke: 2pt + rgb("#00AF50")),
+    rect(
+      image("img/foto.jpg", width: 70%),
+      stroke: 4pt + rgb("#00AF50"),
+      inset: 0pt
+    ),
   ),
   [#align(right)[Correo electrónico]],
   [#link("mailto:victor.gauto@ca.frre.utn.edu.ar")[victor.gauto\@ca.frre.utn.edu.ar]],
