@@ -1,0 +1,211 @@
+---
+title: Mgtr. Víctor Gauto
+format:
+  typst: 
+    title: ""
+    papersize: a4
+    margin:
+      x: 1cm
+      y: 1cm
+    mainfont: "Lato"
+    font-paths: fuentes
+execute: 
+  output: asis
+  eval: true
+  warning: false
+  echo: false
+editor_options: 
+  chunk_output_type: console
+extensions:
+  iconify:
+    set: "octicon"
+    size: "lg"
+    inline: true
+    mode: "svg"
+    style: "color: #00AF50;"
+---
+
+```{r}
+source("scripts/soporte.R")
+```
+
+```{=typst}
+#set par(
+  justify: false
+)
+
+#import "@preview/fontawesome:0.6.0": *
+
+#show link: set text(fill: rgb("#00AF50"), weight: "bold")
+
+#show heading: it => pad(
+  left: 20pt, bottom: 10pt, text(font: "Rufina", fill: rgb("#00AF50"), size: 1.5em)[#upper[#it]]
+)
+
+#show underline: set underline(stroke: rgb("#00AF50"))
+
+#let kw(term) = rect(stroke: rgb("#00AF50"))[#text(size: .8em)[#term]]
+#let tit(term, inicio, fin) = {
+  text(font: "Rufina", size: 1.5em)[#upper[#term]] 
+  text(size: .9em)[\ #fa-icon("calendar", solid: true, fill: rgb("#00AF50")) #h(.2cm) #inicio ▸ #fin]
+}
+
+#let detalle(titulo, lugar, contenido) = {
+  text(weight: "bold")[#titulo. #h(.1cm)] 
+  [#fa-icon("location-dot", solid: true, fill: rgb("#00AF50")) #lugar. \ #contenido.]
+}
+```
+
+```{=typst}
+#rect(
+  width: 100%,
+  fill: rgb("#00AF50"),
+  inset: 1em,
+)[
+  #align(left)[
+    #text(fill: white, font: "Rufina")[
+      #text(size: 1.5em)[Mgtr.] #h(1em)
+      #text(size: 3em)[Víctor Gauto] #h(1em)
+      #text(size: 1.5em)[Ingeniero Químico]
+
+    ]
+  ]
+]
+```
+
+```{=typst}
+#grid(
+  columns: (25%, 45%, 30%),
+  gutter: 10pt,
+  [#align(right)[Fecha de nacimiento]],
+  [`{r} format(nacimiento, "%d/%b/%Y")` (`{r} floor(as.numeric(Sys.Date() - nacimiento)/365)` años)],
+  grid.cell(
+    colspan: 1,
+    rowspan: 5,
+    align: left,
+    rect(image("img/foto.jpg", width: 70%), stroke: 2pt + rgb("#00AF50")),
+  ),
+  [#align(right)[Correo electrónico]],
+  [#link("mailto:victor.gauto@ca.frre.utn.edu.ar")[victor.gauto\@ca.frre.utn.edu.ar]],
+  [#align(right)[Redes sociales]],
+  [
+    #link("https://x.com/vhgauto")[#fa-icon("twitter", solid: true)] #h(.2cm)
+    #link("https://github.com/vhgauto")[#fa-icon("github", solid: true)] #h(.2cm)
+    #link("https://www.instagram.com/vhgauto/")[#fa-icon("instagram", solid: true)] #h(.2cm) / vhgauto
+  ],
+  [#align(right)[Investigación]],
+  [
+    #link("https://orcid.org/0000-0001-9960-8558")[#fa-icon("orcid") ORCID] #h(.1cm) | #h(.1cm)
+    #link("https://scholar.google.es/citations?user=nxCfD0AAAAAJ")[Google Scholar] #h(.1cm) | #h(.1cm)
+    #link("https://www.researchgate.net/profile/Victor_Gauto")[Research Gate]
+  ],
+  [#align(right)[Sitio web]],
+  [#link("https://vhgauto.github.io/")[https://vhgauto.github.io/]]
+)
+```
+
+```{=typst}
+#align(center)[
+  #table(
+  columns: (auto, auto, auto, auto),
+  [#kw[data science]], [#kw[data visualization]], [#kw[GIS]], [#kw[machine learning]], [#kw[maps]], [#kw[remote sensing]], [#kw[Rstats]], [#kw[water quality]]
+)
+]
+```
+# Posición actual
+
+Estudiante del **Doctorado en Geomática y Sistemas Espaciales** del [Instituto de Altos Estudios Espaciales Mario Gulich](https://ig.conae.unc.edu.ar/), dependiente de la [Comisión Nacional de Actividades Espaciales](https://www.argentina.gob.ar/ciencia/conae) y la [Universidad Nacional de Córdoba](https://www.unc.edu.ar/). Tema de tesis “Desarrollo de un modelo predictivo de indicadores de calidad de agua en la cuenca media del río Paraná mediante técnicas de teledetección satelital y aprendizaje automático”.
+
+Becario doctoral CONICET, en el [Instituto de Investigación para el Desarrollo Territorial y del Hábitat Humano](https://iidthh.conicet.gov.ar/).
+
+Integrante del [Grupo de Investigación Sobre Temas Ambientales y Químicos](https://www.instagram.com/gistaq.utn/) en la [Universidad Tecnológica Nacional, Facultad Regional Resistencia](https://www.frre.utn.edu.ar/).
+
+# Educación
+
+```{=typst}
+#grid(
+  columns: (25%, 75%),
+  gutter: 10pt,
+  [#tit([Doctorado], [Abr/2022], [En proceso])],
+  [#detalle(
+    [Doctorado en Geomática y Sistemas Espaciales], 
+    [Instituto Gulich],
+    [#underline[Tesis]: Desarrollo de un modelo predictivo de indicadores de calidad de agua en la cuenca media del río Paraná mediante técnicas de teledetección satelital y aprendizaje automático]
+  )],
+  [#tit([Maestría], [Feb/2020], [Sep/2023])],
+  [#detalle(
+    [Maestría en Aplicaciones de Información Espacial], 
+    [Instituto Gulich],
+    [#underline[Tesis]: Caracterización óptica de aguas superficiales a partir de imágenes satelitales multi e hiperespectrales en la región de Gran Resistencia, Chaco]
+  )],
+  [#tit([Maestría], [Mar/2017], [Feb/2019])],
+  [#detalle(
+    [Maestría en Ingeniería Química y Biomolecular], 
+    [Sogang University, Seúl, Corea del Sur],
+    [#underline[Tesis]: Catalizadores de cobalto con soporte de alúmina mesoporosa ordenada para síntesis de Fischer-Tropsch. Promedio: 9,8/10]
+  )],
+  [#tit([Uniersidad], [Mar/2007], [Dic/2014])],
+  [#detalle(
+    [Ingeniería Química], 
+    [Universidad Tecnológica Nacional (UTN), Facultad Regional Resistencia (FRRe)],
+    [Promedio: 7,2/10. Título intermedio: Técnico Universitario Químico (2012)]
+  )]
+)
+```
+
+# Experiencia
+
+```{=typst}
+#grid(
+  columns: (25%, 75%),
+  gutter: 10pt,
+  [#tit([Investigación], [Feb/2023], [En proceso])],
+  [#detalle(
+    [Grupo de Investigación Sobre Temas Ambientales y Químicos], 
+    [UTN FRRe],
+    [#underline[Proyecto]: Estimar indicadores de calidad de agua en la cuenca media del Río Paraná para el desarrollo de un algoritmo mediante técnicas de teledetección satelital. #link("https://vhgauto.quarto.pub/gistaq-parana/")[Link]]
+  )],
+  [#tit([Investigación], [Feb/2021], [Feb/2023])],
+  [#detalle(
+    [Grupo de Investigación Sobre Temas Ambientales y Químicos], 
+    [UTN FRRe],
+    [#underline[Proyecto]: Caracterización fisicoquímica de cuerpos de aguas continentales para la evaluación de la utilización de algoritmos en el monitoreo satelital de la calidad del agua]
+  )],
+  [#tit([Pasantía], [Mar/2022], [Sep/2022])],
+  [#detalle(
+    [Instituto de Detección Electromagnética del Ambiente], 
+    [Consejo Nacional de Investigación, Milán, Italia],
+    [Uso de producto hiperespectral para estudio de lagunas y ríos]
+  )],
+  [#tit([Servicios], [May/2019], [Feb/2020])],
+  [#detalle(
+    [Grupo de Investigación Sobre Temas Ambientales y Químicos], 
+    [UTN FRRe],
+    [Análisis de calidad de agua y autocalentamiento de carbón. Análisis fisicoquímicos de laboratorio. Gestión de personal, contabilidad y clientes]
+  )],
+  [#tit([Investigación], [May/2019], [Feb/2020])],
+  [#detalle(
+    [Grupo de Investigación Sobre Temas Ambientales y Químicos], 
+    [UTN FRRe],
+    [#underline[Proyecto]: Determinación del fenómeno de sorción-desorción de colorantes en materiales de bajo costo estudiados en un reactor tubular de lecho fijo]
+  )],
+  [#tit([Investigación], [May/2017], [Feb/2019])],
+  [#detalle(
+    [Laboratorio de Ingeniería de las Reacciones y Catálisis a Nanoescala], 
+    [Sogang University, Seúl, Corea del Sur],
+    [#underline[Área]: Tecnología gas-líquido, síntesis de Fischer-Tropsch. Síntesis de catalizadores. Puesta en marcha y manipulación de reactor heterogéneo]
+  )],
+  [#tit([Auxiliar Docente], [Sep/2015], [Feb/2017])],
+  [#detalle(
+    [Actividad en Docencia], 
+    [Universidad Tecnológica Nacional, Facultad Regional Resistencia],
+    [Auxiliar docente con dedicación simple en dos cátedras: Fisicoquímica (Ingeniería Química) y Química (Ingeniería en Sistemas de Información)]
+  )]
+)
+```
+
+
+
+<br>
+
+![](img/foto.jpg){width="25%"}
