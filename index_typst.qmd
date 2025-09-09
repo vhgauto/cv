@@ -34,9 +34,26 @@ source("scripts/soporte.R")
   justify: false
 )
 
+#set page(
+  footer: context [
+    #text(fill: gray, size: .8em)[
+    Ver versión online: #link("https://vhgauto.github.io/cv/")[
+      https://vhgauto.github.io/cv/
+    ]
+    #h(1fr)
+    #counter(page).display(
+      "1 de 1",
+      both: true
+      )
+    ]
+  ]
+)
+
 #import "@preview/fontawesome:0.6.0": *
 
-#show link: set text(fill: rgb("#00AF50"), weight: "bold")
+#show link: set text(fill: rgb("#00AF50"), weight: "regular")
+
+#show list: set list(marker: [#text(fill: rgb("#00AF50"))[▸]], body-indent: 0pt)
 
 #show heading: it => pad(
   left: 20pt, bottom: 10pt, text(font: "Rufina", fill: rgb("#00AF50"), size: 1.5em)[#upper[#it]]
@@ -45,6 +62,11 @@ source("scripts/soporte.R")
 #show underline: set underline(stroke: rgb("#00AF50"))
 
 #let kw(term) = rect(stroke: rgb("#00AF50"))[#text(size: .8em)[#term]]
+
+#let barra = text(fill: rgb("#00AF50"), weight: "bold")[ | ]
+
+#let mono(term) = text(font: "Fira Code", weight: "regular")[#term]
+
 #let tit(term, inicio, fin) = {
   text(font: "Rufina", size: 1.5em)[#upper[#term]] 
   text(size: .9em)[\ #fa-icon("calendar", solid: true, fill: rgb("#00AF50")) #h(.2cm) #inicio ▸ #fin]
@@ -54,6 +76,8 @@ source("scripts/soporte.R")
   text(weight: "bold")[#titulo. #h(.1cm)] 
   [#fa-icon("location-dot", solid: true, fill: rgb("#00AF50")) #lugar. \ #contenido.]
 }
+
+#let encabezado(tit) = text(font: "Rufina", size: 1.5em)[#upper[#tit]]
 ```
 
 ```{=typst}
@@ -112,6 +136,7 @@ source("scripts/soporte.R")
 )
 ]
 ```
+
 # Posición actual
 
 Estudiante del **Doctorado en Geomática y Sistemas Espaciales** del [Instituto de Altos Estudios Espaciales Mario Gulich](https://ig.conae.unc.edu.ar/), dependiente de la [Comisión Nacional de Actividades Espaciales](https://www.argentina.gob.ar/ciencia/conae) y la [Universidad Nacional de Córdoba](https://www.unc.edu.ar/). Tema de tesis “Desarrollo de un modelo predictivo de indicadores de calidad de agua en la cuenca media del río Paraná mediante técnicas de teledetección satelital y aprendizaje automático”.
@@ -144,7 +169,7 @@ Integrante del [Grupo de Investigación Sobre Temas Ambientales y Químicos](htt
     [Sogang University, Seúl, Corea del Sur],
     [#underline[Tesis]: Catalizadores de cobalto con soporte de alúmina mesoporosa ordenada para síntesis de Fischer-Tropsch. Promedio: 9,8/10]
   )],
-  [#tit([Uniersidad], [Mar/2007], [Dic/2014])],
+  [#tit([Universidad], [Mar/2007], [Dic/2014])],
   [#detalle(
     [Ingeniería Química], 
     [Universidad Tecnológica Nacional (UTN), Facultad Regional Resistencia (FRRe)],
@@ -163,7 +188,7 @@ Integrante del [Grupo de Investigación Sobre Temas Ambientales y Químicos](htt
   [#detalle(
     [Grupo de Investigación Sobre Temas Ambientales y Químicos], 
     [UTN FRRe],
-    [#underline[Proyecto]: Estimar indicadores de calidad de agua en la cuenca media del Río Paraná para el desarrollo de un algoritmo mediante técnicas de teledetección satelital. #link("https://vhgauto.quarto.pub/gistaq-parana/")[Link]]
+    [#underline[Proyecto]: Estimar indicadores de calidad de agua en la cuenca media del Río Paraná para el desarrollo de un algoritmo mediante técnicas de teledetección satelital. #link("https://vhgauto.quarto.pub/gistaq-parana/")[Link #fa-icon("link")]]
   )],
   [#tit([Investigación], [Feb/2021], [Feb/2023])],
   [#detalle(
@@ -203,9 +228,130 @@ Integrante del [Grupo de Investigación Sobre Temas Ambientales y Químicos](htt
   )]
 )
 ```
+# Publicaciones
 
+```{=typst}
+#grid(
+  columns: (25%, 75%),
+  gutter: 10pt,
+  [#encabezado([2025])],
+  [- Víctor Gauto, Enid Utges, Elsa Hervot, Maria Daniela Tenev, and Alejandro Farías. #text(weight: "bold")[“Turbidity Estimation by Machine Learning Modelling and Remote Sensing Techniques Applied to a Water Treatment Plant.”] Journal of Sustainable Development of Energy, Water and Environment Systems 13, no. 2 (2025): 1-17. #link("https://doi.org/10.13044/j.sdewes.d13.0539")[10.13044/j.sdewes.d13.0539 #fa-icon("link")]],
+  [#encabezado([2024])],
+  [- Sofía Paná, Matías Bonansea, Vera Camacho Valdéz, Inés del Valle Asís, Víctor Gauto, and Anabella Ferral. #text(weight: "bold")[“Modelling of Phosphorus and Nitrogen Delivery in a Strategic River Basin.”] Journal of Sustainable Development of Energy, Water and Environment Systems 13, no. 2 (2025): 1-17. #link("https://doi.org/10.1109/ARGENCON62399.2024.10735960")[10.1109/ARGENCON62399.2024.10735960 #fa-icon("link")]
+  
+  - Víctor Gauto, Enid Marta Utgés, Elsa Ivonne Hervot, María Daniela Tenev, Alejandro Farías, Matías Bonansea, and Anabella Ferral. #text(weight: "bold")[“Remote Sensing Regression Models to Estimate Water Quality Indicators in Continental Waters in North-East Argentina.”] In 2024 IEEE Biennial Congress of Argentina (ARGENCON), pp. 1-6. IEEE, 2024. #link("https://doi.org/10.1109/ARGENCON62399.2024.10735875")[10.1109/ARGENCON62399.2024.10735875 #fa-icon("link")],
+  
+  - Matias Bonansea, Sofia Gutierrez, Mariana Correa, Sofia Pana, Víctor Gauto, Francisco Nemiña, Alba Germán, Giuliana Beltramone, Lucio Pinotti, and Anabella Ferral. #text(weight: "bold")[“Comparison of water surface temperature retrieval methods from Landsat 9 satellite data.”] The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences 48 (2024): 1-6. #link("https://doi.org/10.5194/isprs-archives-XLVIII-2-W6-2024-1-2024")[10.5194/isprs-archives-XLVIII-2-W6-2024-1-2024 #fa-icon("link")],
+  
+  - Rossana, Villalba, Anabella Ferral, Julián Baéz, Jorge Kurita, Víctor Gauto, and Juan Carlos Bertoni. #text(weight: "bold")[“Spatio-temporal characterization of precipitation in the Middle and Lower Paraguay Basin based on satellite products and weather station data.”] The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences 48 (2024): 65-71. #link("https://doi.org/10.5194/isprs-archives-XLVIII-2-W6-2024-65-2024")[10.5194/isprs-archives-XLVIII-2-W6-2024-65-2024 #fa-icon("link")]],
 
+  [#encabezado([2023])],
+  [- María Daniela Tenev, Camila Torre, Gimena Fontana, Víctor Gauto, Mario Sergio Cleva, Néstor Caracciolo, and Susana Boeykens. #text(weight: "bold")[“Studies of Adsorption-Desorption of Methylene Blue in a Fixed-Bed Reactor Filled with Cotton and Tanine Industry Waste.”] LACCEI 1, no. 8 (2023). #link("https://doi.org/10.18687/LACCEI2023.1.1.1594")[10.18687/LACCEI2023.1.1.1594 #fa-icon("link")]
 
-<br>
+  - Sofia Pana, Víctor Gauto, Mattia Terzaghi, Anabella Ferral, Fransisco Nemiña, Inés del Valle Asís, and Matías Bonansea. #text(weight: "bold")[“Changes in land covers in two river basins in central argentina region. monitoring the sdg 15.3. 1 indicator.”] In 2023 XX Workshop on Information Processing and Control (RPIC), pp. 1-6. IEEE, 2023. #link("https://doi.org/10.1109/RPIC59053.2023.10530795")[10.1109/RPIC59053.2023.10530795 #fa-icon("link")]],
 
-![](img/foto.jpg){width="25%"}
+  [#encabezado([2022])],
+  [- Víctor Gauto, Anabella Ferral, Matias Bonansea, Alejandro Farías, Marcelo Scavuzzo, Osvaldo Cardozo, Alba German, and Claudia Giardino. #text(weight: "bold")[“First results of PRISMA satellite data applied to water quality monitoring in Argentina.”] In 2022 IEEE Biennial Congress of Argentina (ARGENCON), pp. 1-8. IEEE, 2022. #link("https://doi.org/10.1109/ARGENCON55245.2022.9939810")[10.1109/ARGENCON55245.2022.9939810 #fa-icon("link")]],
+
+  [#encabezado([2016])],
+  [- Tenev, Daniela, Alejandro R. Farías, Enrique E. Utgés, Víctor Gauto, Gastón Lara, Camila Torre, Sofía Romero, and Gonzalo Dos Santos. #text(weight: "bold")[“Instalación de un biodigestor y efecto de la adición de biofertilizante en la germinación de semillas de lechuga (Lactuca sativa L).”] (2016).]
+)
+```
+
+# Cursos
+
+```{=typst}
+#grid(
+  columns: (25%, 75%),
+  gutter: 10pt,
+  [#encabezado([2024])],
+  [- Redes neuronales.],
+
+  [#encabezado([2023])],
+  [- Teleobservación de aguas marinas, costeras e interiores.],
+
+  [#encabezado([2021])],
+  [
+    - Introducción a Sistemas de Información Geográfica y Teledetección con Orientación a la Gestión Territorial.
+    - Beyond the Visible Introduction to Hyperspectral Remote Sensing.
+    - Mapping soil moisture and inundation at high resolution.
+    - Air quality and climate processes using satellites and atmospheric models.
+    - Wildfire prevention, monitoring and damage assessment.
+    - Retrieval of biophysical parameters from optical and radar data.
+    - Hyperspectral data processing.
+    - Processing of SAR images: integration of multi-frequency polarimetric SAR and optical data for land cover classification and creation of thematic maps.
+    - SAR differential interferometry and tomography.
+    - Machine learning in remote sensing.
+    - Earth Engine laboratory.
+  ],
+
+  [#encabezado([2019])],
+  [
+    - Escuela de monitoreo ambiental: de la nanociencia a la teledetección. Nuevos paradigmas de participación ciudadana.
+    - Gestión de la ciencia, la tecnología y la innovación.
+  ],
+
+  [#encabezado([2016])],
+  [- Desarrollando proyectos de I+D+i.],
+
+  [#encabezado([2015])],
+  [
+    - Curso-taller teórico práctico “Generación de Biogás y Abono a partir de Residuos Orgánicos”.
+    - Introducción a la investigación, el desarrollo y la innovación.
+  ]
+)
+```
+
+# Habilidades
+
+```{=typst}
+#grid(
+  columns: (25%, 75%),
+  gutter: 10pt,
+  [#encabezado([Datos])],
+  [
+    - #underline[Procesamiento]: lectura, manipulación y almacenamiento. Creación y análisis de figuras.
+    - #underline[Modelado]: regresión y clasificación. Tradicionales y de aprendizaje automático. Redes neuronales. Métricas de desempeño.
+    - #underline[Figuras]: creación, interpretación y estilos personalizados.
+  ],
+
+  [#encabezado([Geografía])],
+  [
+    - #underline[Análisis de datos]: lectura, procesamiento y modelado de datos geográficos.
+    - #underline[Visualización]: ráster y vectores, creación de mapas, estilos personalizados.
+    - #underline[Datos satelitales]: búsqueda, obtención y lectura de datos provenientes de plataformas satelitales.
+  ],
+
+  [#encabezado([Programación])],
+  [#mono[R] #barra #mono[Python] #barra #mono[Quarto] #barra #mono[LaTeX] #barra #mono[Typst] #barra #mono[git] #barra #mono[GitHub]],
+
+  [#encabezado([Software])],
+  [#mono[RStudio] #barra #mono[QGIS] #barra #mono[Visual Studio Code] #barra #mono[Google Earth Engine] \ #mono[Word] #barra #mono[Excel] #barra #mono[PowerPoint]]
+)
+```
+
+# Idiomas
+
+```{=typst}
+#grid(
+  columns: (25%, 75%),
+  gutter: 10pt,
+  [#encabezado([Inglés])],
+  [*Nivel avanzado*. Examen TOEIC: 865/990 (87%). #fa-icon("calendar", fill: rgb("#00AF50")) Nov/2014.],
+
+  [#encabezado([Coreano])],
+  [*Nivel básico*. Yonsei University, curso online. #fa-icon("calendar", fill: rgb("#00AF50")) Oct/2020.]
+)
+```
+
+```{=typst}
+#v(100pt)
+
+#align(center)[
+  #text(fill: gray)[
+    #link("https://github.com/vhgauto/cv")[Ver en #fa-icon("github")] \
+    Creado con  #link("https://quarto.org/")[Quarto] y  #link("https://www.r-project.org/")[R] \
+    `{r} format(Sys.time(), "%Y-%m-%d")`
+  ]
+]
+```
