@@ -24,9 +24,9 @@ item <- function(tipo, inicio, fin, titulo, ubicacion, detalle, borde = FALSE) {
     inicio,
     "{{< iconify ic sharp-arrow-right >}}",
     fin,
-    "</rango>\n:::\n::: {.g-col-9}\n<dest>",
+    "</rango>\n:::\n::: {.g-col-9}\n{{< iconify dashicons:portfolio >}} <dest>",
     titulo,
-    "</dest>.{{< iconify ic sharp-location-on>}}",
+    "</dest>.<br>{{< iconify ic sharp-location-on>}}<i>",
     ubicacion,
     "</i>.<br>",
     detalle,
@@ -42,8 +42,7 @@ años_pub <- unique(pub$año) |>
 
 publicaciones <- function(X, borde = FALSE) {
   p <- dplyr::filter(pub, año == X)$publicacion
-  p <- paste0("- ", p)
-  p <- stringr::str_flatten(p, collapse = "\n ")
+  p <- paste0("{{< iconify heroicons-solid:document >}} ", p)
   p <- stringr::str_replace_all(p, '\"(.+)\"', '"**\\1**"')
   p <- stringr::str_replace_all(
     p,
@@ -60,6 +59,8 @@ publicaciones <- function(X, borde = FALSE) {
     "doi\\.org/(.+)",
     "[\\1 {{< iconify weui:link-filled >}}](https://doi.org/\\1)"
   )
+  p <- paste0("<p class='vert'>", p, "</p>\n\n")
+  p <- stringr::str_flatten(p, collapse = "")
 
   if (X != min(años_pub)) {
     grid_borde <- "\n::: {.grid .borde-abajo}"
@@ -73,7 +74,8 @@ publicaciones <- function(X, borde = FALSE) {
     X,
     "</tipo>\n:::\n::: {.g-col-9}\n",
     p,
-    "\n:::\n:::"
+    ":::\n:::\n\n",
+    sep = ""
   )
 }
 
@@ -126,8 +128,8 @@ años_cur <- unique(cur$año) |>
 
 cursos <- function(X, borde = FALSE) {
   p <- dplyr::filter(cur, año == X)$curso
-  p <- paste0("- ", p, ".")
-  p <- stringr::str_flatten(p, collapse = "\n ")
+  p <- paste0("{{< iconify material-symbols:school-rounded >}} ", p, ".")
+  p <- stringr::str_flatten(p, collapse = "\n\n")
 
   if (X != min(años_cur)) {
     grid_borde <- "\n::: {.grid .borde-abajo}"
@@ -141,6 +143,7 @@ cursos <- function(X, borde = FALSE) {
     X,
     "</tipo>\n:::\n::: {.g-col-9}\n",
     p,
-    "\n:::\n:::"
+    "\n:::\n:::",
+    sep = ""
   )
 }
