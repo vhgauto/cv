@@ -70,7 +70,7 @@ Sitio web
 [{{< iconify ri:mastodon-fill >}}](https://fosstodon.org/@vhgauto) / vhgauto<br>
 [{{< iconify simple-icons:orcid >}} 0000-0001-9960-8558](https://orcid.org/0000-0001-9960-8558) &nbsp; &nbsp; [{{< iconify fa7-brands:google-scholar >}} Google Scholar](https://scholar.google.es/citations?user=nxCfD0AAAAAJ) &nbsp; &nbsp; [{{< iconify simple-icons:researchgate >}} Research Gate ](https://www.researchgate.net/profile/Victor_Gauto)<br>
 [https://vhgauto.github.io/](https://vhgauto.github.io/)<br>
-[{{< iconify flowbite:download-outline >}}Versión .PDF {{< iconify qlementine-icons:pdf-16 >}}](index_typst.pdf){target="_blank"}
+[Descargar versión .pdf {{< iconify flowbite:download-outline >}}](index_typst.pdf){target="_blank"}
 :::
 
 ::: {.g-col-3}
@@ -141,7 +141,7 @@ item(
   inicio = "Mar/2007",
   fin = "Dic/2014",
   titulo = "Ingeniería Química",
-  ubicacion = "Universidad Tecnológica Nacional (UTN), Facultad Regional Resistencia (FRRe)",
+  ubicacion = "Universidad Tecnológica Nacional, Facultad Regional Resistencia",
   detalle = "Promedio: 7,2/10. Título intermedio:  Técnico Universitario Químico (2012)."
 )
 ```
@@ -156,7 +156,7 @@ item(
   inicio = "Feb/2023",
   fin = "En proceso",
   titulo = "Grupo de Investigación Sobre Temas Ambientales y Químicos",
-  ubicacion = "UTN FRRe",
+  ubicacion = "Universidad Tecnológica Nacional, Facultad Regional Resistencia",
   detalle = "<u>Proyecto</u>: Estimar indicadores de calidad de agua en la cuenca media del Río Paraná para el desarrollo de un algoritmo mediante técnicas de teledetección satelital. [Link {{< iconify weui:link-filled >}}](https://vhgauto.quarto.pub/gistaq-parana/)",
   borde = TRUE
 )
@@ -168,7 +168,7 @@ item(
   inicio = "Feb/2021",
   fin = "Feb/2023",
   titulo = "Grupo de Investigación Sobre Temas Ambientales y Químicos",
-  ubicacion = "UTN FRRe",
+  ubicacion = "Universidad Tecnológica Nacional, Facultad Regional Resistencia",
   detalle = "<u>Proyecto</u>: Caracterización fisicoquímica de cuerpos de aguas continentales para la evaluación de la utilización de algoritmos en el monitoreo satelital de la calidad del agua.",
   borde = TRUE
 )
@@ -192,7 +192,7 @@ item(
   inicio = "May/2019",
   fin = "Feb/2020",
   titulo = "Grupo de Investigación Sobre Temas Ambientales y Químicos",
-  ubicacion = "UTN FRRe",
+  ubicacion = "Universidad Tecnológica Nacional, Facultad Regional Resistencia",
   detalle = "Análisis de calidad de agua y autocalentamiento de carbón. Análisis fisicoquímicos de laboratorio. Gestión de personal, contabilidad y clientes.",
   borde = TRUE
 )
@@ -204,7 +204,7 @@ item(
   inicio = "May/2019",
   fin = "Feb/2020",
   titulo = "Grupo de Investigación Sobre Temas Ambientales y Químicos",
-  ubicacion = "UTN FRRe",
+  ubicacion = "Universidad Tecnológica Nacional, Facultad Regional Resistencia",
   detalle = "<u>Proyecto</u>: Determinación del fenómeno de sorción-desorción de colorantes en materiales de bajo costo estudiados en un reactor tubular de lecho fijo.",
   borde = TRUE
 )
@@ -257,9 +257,9 @@ separador("habilidades")
 ```{r}
 habilidades(
   tipo = "Datos",
-  descrip = "- <u>Procesamiento</u>: lectura, manipulación y almacenamiento. Creación y análisis de figuras.\n
-  - <u>Modelado</u>: regresión y clasificación. Tradicionales y de aprendizaje automático. Redes neuronales. Métricas de desempeño.\n
-  - <u>Figuras</u>: creación, interpretación y estilos personalizados.",
+  descrip = "{{< iconify carbon:skill-level-advanced >}} <u>Procesamiento</u>: lectura, manipulación y almacenamiento. Creación y análisis de figuras.\n
+  {{< iconify carbon:skill-level-advanced >}} <u>Modelado</u>: regresión y clasificación. Tradicionales y de aprendizaje automático. Redes neuronales. Métricas de desempeño.\n
+  {{< iconify carbon:skill-level-advanced >}} <u>Figuras</u>: creación, interpretación y estilos personalizados.",
   borde = TRUE
 )
 ```
@@ -267,9 +267,9 @@ habilidades(
 ```{r}
 habilidades(
   tipo = "Geografía",
-  descrip = "- <u>Análisis de datos</u>: lectura, procesamiento y modelado de datos geográficos.\n
-  - <u>Visualización</u>: ráster y vectores, creación de mapas, estilos personalizados.\n
-  - <u>Datos satelitales</u>: búsqueda, obtención y lectura de datos provenientes de plataformas satelitales.",
+  descrip = "{{< iconify carbon:skill-level-advanced >}} <u>Análisis de datos</u>: lectura, procesamiento y modelado de datos geográficos.\n
+  {{< iconify carbon:skill-level-advanced >}} <u>Visualización</u>: ráster y vectores, creación de mapas, estilos personalizados.\n
+  {{< iconify carbon:skill-level-advanced >}} <u>Datos satelitales</u>: búsqueda, obtención y lectura de datos provenientes de plataformas satelitales.",
   borde = TRUE
 )
 ```
