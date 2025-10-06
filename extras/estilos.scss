@@ -30,6 +30,15 @@ dest {
   font-weight: bold;
 }
 
+.img-fluid {
+  transition-duration: .5s;
+  border: 3px solid $body-color;
+  &:hover {
+    transition-duration: .5s;
+    border: 3px solid $verde;
+  }
+}
+
 p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
   background-color: transparent;
   color: $body-color;
