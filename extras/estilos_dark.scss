@@ -13,10 +13,6 @@ gris {
   color: lighten($gris, 2);
 }
 
-.img-fluid {
-  border: 3px solid $body-color;
-}
-
 .fecha-act {
   text-align: center;
   color: lighten($color: $gris, $amount: 7);
