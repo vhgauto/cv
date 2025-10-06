@@ -257,9 +257,9 @@ separador("habilidades")
 ```{r}
 habilidades(
   tipo = "Datos",
-  descrip = "{{< iconify carbon:skill-level-advanced >}} <u>Procesamiento</u>: lectura, manipulación y almacenamiento. Creación y análisis de figuras.\n
-  {{< iconify carbon:skill-level-advanced >}} <u>Modelado</u>: regresión y clasificación. Tradicionales y de aprendizaje automático. Redes neuronales. Métricas de desempeño.\n
-  {{< iconify carbon:skill-level-advanced >}} <u>Figuras</u>: creación, interpretación y estilos personalizados.",
+  descrip = c("{{< iconify fluent-mdl2:processing >}} <u>Procesamiento</u>: lectura, manipulación y almacenamiento. Creación y análisis de figuras.",
+  "{{< iconify carbon:model >}} <u>Modelado</u>: regresión y clasificación. Tradicionales y de aprendizaje automático. Redes neuronales. Métricas de desempeño.",
+  "{{< iconify carbon:qq-plot >}} <u>Figuras</u>: creación, interpretación y estilos personalizados."),
   borde = TRUE
 )
 ```
@@ -267,9 +267,9 @@ habilidades(
 ```{r}
 habilidades(
   tipo = "Geografía",
-  descrip = "{{< iconify carbon:skill-level-advanced >}} <u>Análisis de datos</u>: lectura, procesamiento y modelado de datos geográficos.\n
-  {{< iconify carbon:skill-level-advanced >}} <u>Visualización</u>: ráster y vectores, creación de mapas, estilos personalizados.\n
-  {{< iconify carbon:skill-level-advanced >}} <u>Datos satelitales</u>: búsqueda, obtención y lectura de datos provenientes de plataformas satelitales.",
+  descrip = c("{{< iconify tdesign:data-filled >}} <u>Análisis de datos</u>: lectura, procesamiento y modelado de datos geográficos.", 
+  "{{< iconify gis:globe-alt >}} <u>Visualización</u>: ráster y vectores, creación de mapas y estilos personalizados.",
+  "{{< iconify gis:satellite >}} <u>Datos satelitales</u>: búsqueda, obtención y lectura de datos provenientes de plataformas satelitales."),
   borde = TRUE
 )
 ```
