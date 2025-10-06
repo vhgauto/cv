@@ -24,13 +24,14 @@ item <- function(tipo, inicio, fin, titulo, ubicacion, detalle, borde = FALSE) {
     inicio,
     "{{< iconify ic sharp-arrow-right >}}",
     fin,
-    "</rango>\n:::\n::: {.g-col-9}\n{{< iconify dashicons:portfolio >}} <dest>",
+    "</rango>\n:::\n::: {.g-col-9}\n<p style='margin-bottom: 1em;'>",
+    "{{< iconify dashicons:portfolio >}} <dest>",
     titulo,
     "</dest>.<br>{{< iconify ic sharp-location-on>}}<i>",
     ubicacion,
     "</i>.<br>",
     detalle,
-    "\n:::\n:::",
+    "</p>\n:::\n:::",
     sep = ""
   )
 }
@@ -86,6 +87,15 @@ habilidades <- function(tipo, descrip, borde = FALSE) {
     grid_borde <- "::: {.grid}"
   }
 
+  descrip <- stringr::str_flatten(
+    paste0(
+      "<p style='margin-bottom: 1.2em;'>",
+      descrip,
+      "</p>"
+    ),
+    collapse = "\n\n"
+  )
+
   cat(
     grid_borde,
     "\n::: {.g-col-3}\n<tipo>",
@@ -105,12 +115,12 @@ keywords <- function() {
 
 programación <- function(color = "black") {
   paste0(
-    "{{< iconify fa-brands:r-project style='color:#1E69BF;' >}} R &nbsp; &nbsp; 
-  {{< iconify logos:python >}} Python &nbsp; &nbsp; 
-  {{< quarto >}} Quarto &nbsp; &nbsp; 
-  {{< iconify material-icon-theme:tex >}} LaTeX &nbsp; &nbsp; 
-  {{< iconify material-icon-theme:typst >}} Typst &nbsp; &nbsp; 
-  {{< iconify devicon:git >}} git &nbsp; &nbsp; 
+    "{{< iconify fa-brands:r-project style='color:#1E69BF;' >}} R &nbsp; &nbsp;
+  {{< iconify logos:python >}} Python &nbsp; &nbsp;
+  {{< quarto >}} Quarto &nbsp; &nbsp;
+  {{< iconify material-icon-theme:tex >}} LaTeX &nbsp; &nbsp;
+  {{< iconify material-icon-theme:typst >}} Typst &nbsp; &nbsp;
+  {{< iconify devicon:git >}} git &nbsp; &nbsp;
   {{< iconify ri:github-fill style='color: ",
     color,
     ";' >}} GitHub"
@@ -128,7 +138,12 @@ años_cur <- unique(cur$año) |>
 
 cursos <- function(X, borde = FALSE) {
   p <- dplyr::filter(cur, año == X)$curso
-  p <- paste0("{{< iconify material-symbols:school-rounded >}} ", p, ".")
+  p <- paste0(
+    "<p style='margin-bottom: .8em;'>",
+    "{{< iconify material-symbols:school-rounded >}} ",
+    p,
+    ".</p>"
+  )
   p <- stringr::str_flatten(p, collapse = "\n\n")
 
   if (X != min(años_cur)) {
@@ -139,7 +154,7 @@ cursos <- function(X, borde = FALSE) {
 
   cat(
     grid_borde,
-    "\n::: {.g-col-3}\n<tipo>",
+    "\n::: {.g-col-3}\n<tipo >",
     X,
     "</tipo>\n:::\n::: {.g-col-9}\n",
     p,
