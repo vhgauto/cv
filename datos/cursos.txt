@@ -17,5 +17,5 @@ año	curso
 2021	Earth Engine laboratory
 2023	Teleobservación de aguas marinas, costeras e interiores
 2024	Redes neuronales
-
-
+2025	Caracterización hiperespectral: Una introducción a las técnicas de laboratorio, mediciones de campo e información satelital
+2025	Escuela de Primavera: Inteligencia artificial y computación cuántica en la observación de la Tierra
