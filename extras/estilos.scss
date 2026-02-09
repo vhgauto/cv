@@ -21,6 +21,50 @@ $font-family-monospace: Fira Code;
 
 /*-- scss:rules --*/
 
+// https://prismic.io/blog/css-hover-effects
+
+.hover-underline {
+  font-size: 2rem;
+  // color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  // background: linear-gradient(to left, #ff0000, #00ffff); 
+  background: #00ffff; 
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .vert {
   margin-bottom: 1.1rem;
 }
