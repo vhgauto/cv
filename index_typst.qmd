@@ -37,7 +37,7 @@ source("scripts/soporte.R")
 #set page(
   footer: context [
     #text(fill: gray, size: .8em)[
-    Ver versión online: #link("https://vhgauto.github.io/cv/")[
+    Versión online: #link("https://vhgauto.github.io/cv/")[
       https://vhgauto.github.io/cv/
     ]
     #h(1fr)
