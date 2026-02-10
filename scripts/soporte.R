@@ -140,7 +140,7 @@ cursos <- function(X, borde = FALSE) {
   p <- dplyr::filter(cur, año == X)$curso
   p <- paste0(
     "<p style='margin-bottom: .8em;'>",
-    "{{< iconify material-symbols:school-rounded >}} ",
+    "{{< iconify tdesign:course-filled >}} ",
     p,
     ".</p>"
   )
