@@ -70,7 +70,7 @@ Sitio web
 [{{< iconify ri:mastodon-fill >}}](https://fosstodon.org/@vhgauto) / vhgauto<br>
 [{{< iconify simple-icons:orcid >}} 0000-0001-9960-8558](https://orcid.org/0000-0001-9960-8558) &nbsp; &nbsp; [{{< iconify fa7-brands:google-scholar >}} Google Scholar](https://scholar.google.es/citations?user=nxCfD0AAAAAJ) &nbsp; &nbsp; [{{< iconify simple-icons:researchgate >}} Research Gate ](https://www.researchgate.net/profile/Victor_Gauto)<br>
 [https://vhgauto.github.io/](https://vhgauto.github.io/)<br>
-[Descargar versión .pdf {{< iconify flowbite:download-outline >}}](index_typst.pdf){target="_blank"}
+[{{< iconify flowbite:download-outline >}} Descargar versión {{< iconify teenyicons:pdf-solid >}}](index_typst.pdf){target="_blank"}
 :::
 
 ::: {.g-col-3}
